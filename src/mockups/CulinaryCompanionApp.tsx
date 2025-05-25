@@ -21,7 +21,7 @@ import {
   Filter, 
   Plus,
   ArrowLeft,
-  Microphone,
+  Mic,
   Camera
 } from 'lucide-react';
 
@@ -147,7 +147,7 @@ const CulinaryCompanionApp = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
               <Button variant="ghost" size="icon" className="absolute right-1 top-1">
-                <Microphone className="h-4 w-4 text-primary-500" />
+                <Mic className="h-4 w-4 text-primary-500" />
               </Button>
             </div>
           </div>
