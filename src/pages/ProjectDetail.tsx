@@ -152,6 +152,26 @@ const ProjectDetail = () => {
                   </div>
                 </div>
                 
+                {/* UI Mockup Button */}
+                {project.id <= 4 && (
+                  <div className="bg-primary-50 rounded-lg p-6 mb-6">
+                    <h3 className="text-lg font-medium mb-2">Interactive UI Mockup</h3>
+                    <p className="text-secondary-700 mb-4">
+                      Experience this project's interface firsthand with our interactive mockup.
+                    </p>
+                    <Button asChild>
+                      <Link to={
+                        project.id === 1 ? "/mockups/finance-dashboard" : 
+                        project.id === 2 ? "/mockups/booking-platform" : 
+                        project.id === 3 ? "/mockups/culinary-app" :
+                        project.id === 4 ? "/mockups/artisan-ecommerce" : "#"
+                      }>
+                        View UI Mockup
+                      </Link>
+                    </Button>
+                  </div>
+                )}
+                
                 {/* Challenge and Solution */}
                 <div>
                   <h3 className="text-xl font-medium mb-3">The Challenge</h3>

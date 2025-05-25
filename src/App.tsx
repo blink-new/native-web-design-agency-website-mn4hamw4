@@ -9,6 +9,12 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
+// UI Mockups
+import LuminaFinanceDashboard from './mockups/LuminaFinanceDashboard';
+import NomadNestBookingPlatform from './mockups/NomadNestBookingPlatform';
+import CulinaryCompanionApp from './mockups/CulinaryCompanionApp';
+import ArtisanEcommercePlatform from './mockups/ArtisanEcommercePlatform';
+
 function App() {
   return (
     <Router>
@@ -77,6 +83,13 @@ function App() {
             </Layout>
           } 
         />
+
+        {/* UI Mockup Routes */}
+        <Route path="/mockups/finance-dashboard" element={<LuminaFinanceDashboard />} />
+        <Route path="/mockups/booking-platform" element={<NomadNestBookingPlatform />} />
+        <Route path="/mockups/culinary-app" element={<CulinaryCompanionApp />} />
+        <Route path="/mockups/artisan-ecommerce" element={<ArtisanEcommercePlatform />} />
+        
         <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
     </Router>
